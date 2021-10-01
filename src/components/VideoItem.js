@@ -7,12 +7,12 @@ const VideoItem = ({ info }) => {
     <div className="item videoItem">
       <img
         className="ui image videoItemImage"
-        src={info.thumbnails.medium.url}
-        alt={info.description}
+        src={info.snippet.thumbnails.medium.url}
+        alt={info.snippet.description}
       />
       <div className="content ">
         <div className="header videoItemContent">
-          <p> {info.title}</p>
+          <p> {info.snippet.title}</p>
         </div>
       </div>
     </div>
