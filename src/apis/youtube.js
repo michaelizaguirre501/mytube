@@ -1,10 +1,12 @@
 import axios from "axios";
-const KEY = "AIzaSyDHosoNmAjUdxqHoUJy8eHbBh1Uf0EKsk0";
+require("dotenv").config();
 
+const KEY = "AIzaSyDsfYdPR2w-lY9au4gGgc58zOWSu2blHx8";
 export default axios.create({
-  baseUrl: "https://www.googleapis.com/youtube/v3",
+  baseURL: "https://www.googleapis.com/youtube/v3",
   params: {
     part: "snippet",
+    type: "video",
     maxResults: 5,
     key: KEY,
   },
